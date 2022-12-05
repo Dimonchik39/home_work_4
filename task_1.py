@@ -14,19 +14,10 @@ def give_int(input_number) -> int:
         except ValueError:
             print('Вы ввели не число. Введите число.')
 
-# def multiplier_list(num):
-#     i = 2 
-#     res_list = []
-#     while i <= num:
-#         if num % i == 0:
-#             res_list.append(i)
-#             num //= i
-#             i = 2
-#         else:
-#             i += 1
-#     return res_list
-
 def multiplier_list(num):
+    '''
+    Функция составления списка простых множителей
+    '''
     res_list = []
     prime_num = 2
     
