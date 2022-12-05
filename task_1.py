@@ -36,7 +36,8 @@ def multiplier_list(num):
             num //= prime_num
         else:
             prime_num += 1
-    res_list.append(num)
+    if num > 1:
+        res_list.append(num)
     return res_list
 
 int_num = give_int('Введите число: ')
