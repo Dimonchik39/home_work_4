@@ -31,6 +31,18 @@ def multiplier_list(num):
         res_list.append(num)
     return res_list
 
+def sorting_list(list1):
+    '''
+    Функция сортировки: удаление повторяющихся елементов
+    '''
+    list_result = []
+    
+    for i in list1:
+        if i not in list_result:
+            list_result.append(i)       
+    return list_result   
+
 int_num = give_int('Введите число: ')
 result_list = multiplier_list(int_num)
-print(f'N = {int_num} -> {result_list}')
+result_sort_list = sorting_list(result_list)
+print(f'N = {int_num} -> {result_sort_list}')
